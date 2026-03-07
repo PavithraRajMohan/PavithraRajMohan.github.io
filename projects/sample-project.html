@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wearable Exoskeleton Rehabilitation Device — Pavithra Raj Mohan</title>
+  <meta name="description" content="A wearable lower-limb exoskeleton designed to assist post-stroke rehabilitation through embedded sensor feedback and actuated joint support." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ───────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo">P<span>.</span>R<span>.</span>M</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../resume.html">Résumé</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Project Hero ─────────────────────────────────────── -->
+  <header class="project-hero">
+    <div class="container">
+      <div class="label">Wearable Rehabilitation · Bionics Team</div>
+      <h1>Wearable Exoskeleton<br/><em style="font-style:italic;color:var(--accent);">Rehabilitation Device</em></h1>
+
+      <div class="project-meta">
+        <div class="project-meta-item">
+          <span class="project-meta-label">Year</span>
+          <span class="project-meta-value">2024 &ndash; 2025</span>
+        </div>
+        <div class="project-meta-item">
+          <span class="project-meta-label">Team</span>
+          <span class="project-meta-value">University of Ottawa Bionics Team</span>
+        </div>
+        <div class="project-meta-item">
+          <span class="project-meta-label">Discipline</span>
+          <span class="project-meta-value">Biomedical &amp; Mechanical Engineering</span>
+        </div>
+        <div class="project-meta-item">
+          <span class="project-meta-label">Status</span>
+          <span class="project-meta-value">Prototype Complete</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Project Content ──────────────────────────────────── -->
+  <article class="project-content">
+
+    <!-- Overview -->
+    <section>
+      <h2 class="fade-up">Overview</h2>
+      <p class="fade-up">
+        This project involved the design, analysis, and prototyping of a lightweight wearable
+        lower-limb exoskeleton intended to assist stroke survivors during gait rehabilitation.
+        The device provides passive and semi-active joint support at the knee, reducing the muscular
+        effort required for ambulation while collecting biomechanical data to inform clinical decisions.
+      </p>
+      <p class="fade-up">
+        Developed within the University of Ottawa Bionics Team, the system integrates structural
+        mechanical components with embedded electronics, forming a platform for real-world
+        rehabilitation research.
+      </p>
+    </section>
+
+    <!-- Problem -->
+    <section>
+      <h2 class="fade-up">Problem Statement</h2>
+      <p class="fade-up">
+        Post-stroke gait impairment affects over 80% of stroke survivors. Conventional physiotherapy
+        is labour-intensive, limited in session frequency, and lacks objective, real-time biomechanical
+        feedback. Existing commercial exoskeletons are prohibitively expensive (CAD $80,000+) and
+        confined to clinical settings, preventing widespread accessibility.
+      </p>
+      <p class="fade-up">
+        The engineering challenge was to create a low-cost, modular, and mechanically sound
+        wearable device that supports knee joint function during rehabilitation exercises
+        while capturing angle and force data for analysis.
+      </p>
+    </section>
+
+    <!-- Design Approach -->
+    <section>
+      <h2 class="fade-up">Design Approach</h2>
+      <p class="fade-up">
+        The design process followed a structured mechanical engineering methodology: requirements
+        definition, concept generation, detailed CAD modelling, stress and kinematic analysis,
+        manufacturing, and iterative testing.
+      </p>
+      <p class="fade-up">
+        A single-degree-of-freedom knee joint mechanism was designed in SolidWorks, using a
+        four-bar linkage to approximate the polycentric motion of the human knee. The structural
+        frame was manufactured via FDM 3D printing in PLA+, with critical load-bearing joints
+        reinforced using aluminium inserts.
+      </p>
+      <p class="fade-up">
+        An Arduino-based embedded control system monitored joint angle via potentiometer and
+        resistance via FSR sensors in the insole, enabling real-time gait phase detection.
+      </p>
+    </section>
+
+    <!-- Tools & Technologies -->
+    <section>
+      <h2 class="fade-up">Tools &amp; Technologies</h2>
+      <div class="tech-tags fade-up">
+        <span class="tech-tag">SolidWorks</span>
+        <span class="tech-tag">Arduino</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">3D Printing (FDM)</span>
+        <span class="tech-tag">C++</span>
+        <span class="tech-tag">FSR Sensors</span>
+        <span class="tech-tag">PCB Design</span>
+        <span class="tech-tag">FEA (SimScale)</span>
+      </div>
+    </section>
+
+    <!-- System Architecture -->
+    <section>
+      <h2 class="fade-up">System Architecture &amp; Design</h2>
+      <p class="fade-up">
+        The exoskeleton is composed of three primary subsystems:
+      </p>
+      <ul class="fade-up">
+        <li><strong>Structural Frame:</strong> 3D-printed thigh and shank cuffs connected by the four-bar knee mechanism. Total weight: 780 g per limb.</li>
+        <li><strong>Sensing System:</strong> Rotary potentiometer at the knee joint + three FSR sensors distributed across the insole to detect heel strike, midstance, and toe-off events.</li>
+        <li><strong>Control &amp; Data Logging:</strong> Arduino Nano processes sensor signals at 100 Hz and transmits data over USB serial to a Python data acquisition script for post-session analysis.</li>
+      </ul>
+
+      <!-- Placeholder Image -->
+      <div class="project-image-block fade-up">
+        <span>[ System Architecture Diagram — Place Image Here ]</span>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section>
+      <h2 class="fade-up">Results</h2>
+      <p class="fade-up">
+        The functional prototype successfully demonstrated passive knee support across a full
+        gait cycle in bench-top testing. Key outcomes included:
+      </p>
+      <ul class="fade-up">
+        <li>Accurate gait phase detection with FSR array achieving 92% phase classification accuracy across 40 test trials.</li>
+        <li>Structural integrity verified under static loading to 1.5 × maximum expected body-weight force (440 N).</li>
+        <li>Knee angle tracking within ±2° of reference goniometer throughout range of motion.</li>
+        <li>Total unit cost of materials: CAD $220 — representing a &gt;99% cost reduction versus commercial alternatives.</li>
+      </ul>
+    </section>
+
+    <!-- Lessons Learned -->
+    <section>
+      <h2 class="fade-up">Lessons Learned</h2>
+      <p class="fade-up">
+        One of the most valuable insights was the importance of designing for manufacturing from
+        the outset. Several early bracket iterations failed due to layer delamination in the
+        print orientation, which was resolved by redesigning parts to align structural loads with
+        the print direction.
+      </p>
+      <p class="fade-up">
+        Working in a multidisciplinary team also reinforced the need for clearly defined
+        interfaces between mechanical and electrical subsystems — including toleranced mounting
+        features for PCB components and shielded cable routing paths built into the structural frame.
+      </p>
+    </section>
+
+    <!-- Future Improvements -->
+    <section>
+      <h2 class="fade-up">Future Improvements</h2>
+      <p class="fade-up">
+        Several directions would strengthen this system in subsequent design iterations:
+      </p>
+      <ul class="fade-up">
+        <li>Integration of a brushless DC actuator at the knee joint to transition from passive to powered assistance.</li>
+        <li>Wireless BLE data transmission to replace the tethered USB serial link, improving clinical usability.</li>
+        <li>Finite element analysis refinement using patient-specific limb geometry derived from CT imaging.</li>
+        <li>Human subjects pilot study to validate biomechanical efficacy in collaboration with the uOttawa rehabilitation clinic.</li>
+      </ul>
+    </section>
+
+    <!-- Back Link -->
+    <a href="../projects.html" class="back-link fade-up">
+      &#8592; Back to Projects
+    </a>
+
+  </article>
+
+  <!-- ── Footer ────────────────────────────────────────────── -->
+  <footer>
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2026 Pavithra Raj Mohan. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="../about.html">About</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">&#8593;</button>
+  <script src="../js/main.js"></script>
+</body>
+</html>
